@@ -1,5 +1,5 @@
 // Définition des tailles de marge
-$margins: (
+$gaps: (
         1: 10px,
         2: 20px,
         3: 30px,
@@ -7,13 +7,13 @@ $margins: (
         5: 50px
 );
 
-// Génère les classes m-*
-@each $index, $margin in $margins {
-  .m-#{$index} {
-    padding-right: $margin;
-    padding-left: $margin;
-  }
-}
+$paddings: (
+        1: 10px,
+        2: 20px,
+        3: 30px,
+        4: 40px,
+        5: 50px
+);
 
 .flix-grid {
   box-sizing: border-box;
@@ -21,6 +21,8 @@ $margins: (
   width: 100%;
   padding: 25px 15px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // Crée 12 colonnes de largeur équivalentes
 }
 
 .flix-grid-l {
@@ -29,6 +31,8 @@ $margins: (
   width: 100%;
   padding: 25px 15px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // Crée 12 colonnes de largeur équivalentes
 }
 
 .flix-grid-m {
@@ -37,6 +41,8 @@ $margins: (
   width: 100%;
   padding: 25px 15px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // Crée 12 colonnes de largeur équivalentes
 }
 
 .flix-grid-s {
@@ -45,15 +51,18 @@ $margins: (
   width: 100%;
   padding: 25px 15px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // Crée 12 colonnes de largeur équivalentes
 }
 
 .flix-row {
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: inherit;
   width: 100%;
   margin: 25px auto;
   padding: 25px;
+  grid-column: 1 / span 12;
 }
 
 .flix-page {
@@ -66,12 +75,22 @@ $margins: (
 
 @for $i from 1 through 12 {
   .flix-col-#{$i} {
-    box-sizing: border-box;
-    // On suppose qu'il s'agit d'un système de grille à 12 colonnes, donc pour le calculer, nous devons diviser le numéro de colonne par 12 et le multiplier par 100 pour obtenir le pourcentage.
-    flex: 0 0 calc(#{($i / 12) * 100%});
-    // Utilise le même calcul pour la largeur maximale pour empêcher des débordements
-    max-width: calc(#{($i / 12) * 100%});
+    //box-sizing: border-box;
+    grid-column: span #{$i}; // Indique à la colonne de prendre le nombre approprié
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+}
+
+@each $index, $gap in $gaps {
+  .g-#{$index} {
+    grid-gap: $gap;
+  }
+}
+
+@each $index, $padding in $paddings {
+  .p-#{$index} {
+    padding-right: $padding;
+    padding-left: $padding;
   }
 }
