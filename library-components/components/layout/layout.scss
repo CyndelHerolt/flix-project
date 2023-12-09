@@ -1,40 +1,63 @@
+// Définition des tailles de marge
+$margins: (
+        1: 10px,
+        2: 20px,
+        3: 30px,
+        4: 40px,
+        5: 50px
+);
+
+// Génère les classes m-*
+@each $index, $margin in $margins {
+  .m-#{$index} {
+    padding-right: $margin;
+    padding-left: $margin;
+  }
+}
+
 .flix-grid {
+  box-sizing: border-box;
   max-width: 1300px;
   width: 100%;
-  padding: 25px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 25px 15px;
+  margin: 0 auto;
 }
 
 .flix-grid-l {
+  box-sizing: border-box;
   max-width: 1500px;
   width: 100%;
-  padding: 25px;
+  padding: 25px 15px;
   margin: 0 auto;
 }
 
 .flix-grid-m {
+  box-sizing: border-box;
   max-width: 1200px;
   width: 100%;
-  padding: 25px;
+  padding: 25px 15px;
   margin: 0 auto;
 }
 
 .flix-grid-s {
+  box-sizing: border-box;
   max-width: 1000px;
   width: 100%;
-  padding: 25px;
+  padding: 25px 15px;
   margin: 0 auto;
 }
 
 .flix-row {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 50px 0;
+  margin: 25px auto;
+  padding: 25px;
 }
 
 .flix-page {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -43,11 +66,12 @@
 
 @for $i from 1 through 12 {
   .flix-col-#{$i} {
+    box-sizing: border-box;
     // On suppose qu'il s'agit d'un système de grille à 12 colonnes, donc pour le calculer, nous devons diviser le numéro de colonne par 12 et le multiplier par 100 pour obtenir le pourcentage.
     flex: 0 0 calc(#{($i / 12) * 100%});
     // Utilise le même calcul pour la largeur maximale pour empêcher des débordements
     max-width: calc(#{($i / 12) * 100%});
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
