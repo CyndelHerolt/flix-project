@@ -39,75 +39,130 @@
   display: grid;
   grid-template-columns: inherit;
   width: 100%;
-  margin: 25px auto;
+  margin: 0 auto;
   padding: 25px;
   grid-column: 1 / span 12; }
 
+.max-height {
+  height: 100%; }
+
 .flix-page {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: inherit;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  grid-column: 1 / span 12;
   min-height: 100vh; }
 
 .flix-col-1 {
   grid-column: span 1;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-1 {
+  height: auto; }
 
 .flix-col-2 {
   grid-column: span 2;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-2 {
+  height: auto; }
 
 .flix-col-3 {
   grid-column: span 3;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-3 {
+  height: auto; }
 
 .flix-col-4 {
   grid-column: span 4;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-4 {
+  height: auto; }
 
 .flix-col-5 {
   grid-column: span 5;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-5 {
+  height: auto; }
 
 .flix-col-6 {
   grid-column: span 6;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-6 {
+  height: auto; }
 
 .flix-col-7 {
   grid-column: span 7;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-7 {
+  height: auto; }
 
 .flix-col-8 {
   grid-column: span 8;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-8 {
+  height: auto; }
 
 .flix-col-9 {
   grid-column: span 9;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-9 {
+  height: auto; }
 
 .flix-col-10 {
   grid-column: span 10;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-10 {
+  height: auto; }
 
 .flix-col-11 {
   grid-column: span 11;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-11 {
+  height: auto; }
 
 .flix-col-12 {
   grid-column: span 12;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: fit-content; }
+
+.flix-row.max-height .flix-col-12 {
+  height: auto; }
 
 .g-1 {
   grid-gap: 10px; }

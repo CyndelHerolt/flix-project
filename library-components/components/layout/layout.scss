@@ -60,15 +60,23 @@ $paddings: (
   display: grid;
   grid-template-columns: inherit;
   width: 100%;
-  margin: 25px auto;
+  margin: 0 auto;
   padding: 25px;
   grid-column: 1 / span 12;
 }
 
+.max-height {
+  height: 100%;
+}
+
 .flix-page {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: inherit;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  grid-column: 1 / span 12;
   min-height: 100vh;
 
 }
@@ -79,6 +87,12 @@ $paddings: (
     grid-column: span #{$i}; // Indique à la colonne de prendre le nombre approprié
     padding-top: 25px;
     padding-bottom: 25px;
+    height: fit-content;
+  }
+  .flix-row.max-height {
+    .flix-col-#{$i} {
+      height: auto;
+    }
   }
 }
 
