@@ -1,0 +1,27 @@
+@import "variables/_colors";
+//@import "alerts";
+//@import "badges";
+//@import "breadcrumbs";
+@import "buttons/_buttons";
+//@import "cards";
+//@import "dropdowns";
+//@import "forms";
+@import "layout/_layout";
+//@import "lists";
+//@import "loading";
+//@import "modals";
+//@import "navs";
+//@import "popups";
+//@import "range";
+//@import "side-tabs";
+//@import "steps";
+//@import "tables";
+//@import "tabs";
+//@import "theme";
+
+
+body {
+  background-color: var(--color-secondary);
+  font-family: $primary-font;
+  color: var(--color-text);
+}

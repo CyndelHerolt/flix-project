@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "globule": "^1.3.4",
+    "node-sass": "^9.0.0"
+  },
+  "name": "library-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch components -o css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
