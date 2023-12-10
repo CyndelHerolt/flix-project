@@ -1,5 +1,6 @@
 // Définition des tailles de marge
 $gaps: (
+        0: 0,
         1: 10px,
         2: 20px,
         3: 30px,
@@ -8,6 +9,7 @@ $gaps: (
 );
 
 $paddings: (
+        0: 0,
         1: 15px,
         2: 25px,
         3: 35px,
@@ -83,14 +85,6 @@ $paddings: (
 
 @for $i from 1 through 12 {
   .flix-col-#{$i} {
-
-    // todo: retirer les couleurs de test
-    // ------------------------------------
-    background-color: var(--color-dominant);
-    border-radius: 5px;
-    color: var(--color-primary);
-    // ------------------------------------
-
     grid-column: span #{$i}; // Indique à la colonne de prendre le nombre approprié
     padding: 25px 10px;
     height: fit-content;
@@ -113,4 +107,216 @@ $paddings: (
     padding-right: $padding;
     padding-left: $padding;
   }
+}
+
+// todo: retirer les couleurs de test
+// ------------------------------------
+.bg-dominant {
+  background-color: var(--color-dominant);
+  border-radius: 5px;
+  color: var(--color-primary);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    color: var(--color-dominant);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    color: var(--color-dominant);
+}
+
+.bg-tertiary {
+    background-color: var(--color-tertiary);
+    border-radius: 5px;
+    color: var(--color-dominant);
+}
+
+// ------------------------------------
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-justify-space-around {
+  justify-content: space-around;
+}
+
+.flex-justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+
+.flex-align-end {
+  align-items: flex-end;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-baseline {
+  align-items: baseline;
+}
+
+.flex-align-stretch {
+  align-items: stretch;
+}
+
+.flex-align-content-start {
+  align-content: flex-start;
+}
+
+.flex-align-content-end {
+  align-content: flex-end;
+}
+
+.flex-align-content-center {
+  align-content: center;
+}
+
+.flex-align-content-space-between {
+  align-content: space-between;
+}
+
+.flex-align-content-space-around {
+  align-content: space-around;
+}
+
+.flex-align-content-stretch {
+  align-content: stretch;
+}
+
+.flex-align-self-start {
+  align-self: flex-start;
+}
+
+.flex-align-self-end {
+  align-self: flex-end;
+}
+
+.flex-align-self-center {
+  align-self: center;
+}
+
+.flex-align-self-baseline {
+  align-self: baseline;
+}
+
+.flex-align-self-stretch {
+  align-self: stretch;
+}
+
+.flex-justify-self-start {
+  justify-self: flex-start;
+}
+
+.flex-justify-self-end {
+  justify-self: flex-end;
+}
+
+.flex-justify-self-center {
+  justify-self: center;
+}
+
+.flex-justify-self-baseline {
+  justify-self: baseline;
+}
+
+.flex-justify-self-stretch {
+  justify-self: stretch;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-order-0 {
+  order: 0;
+}
+
+.flex-order-1 {
+  order: 1;
+}
+
+.flex-order-2 {
+  order: 2;
+}
+
+.flex-order-3 {
+  order: 3;
+}
+
+.flex-order-4 {
+  order: 4;
+}
+
+.flex-order-5 {
+  order: 5;
 }
