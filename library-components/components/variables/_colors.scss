@@ -7,6 +7,10 @@
 $light: (
         colorPrimary: #ff7167,
         colorPrimaryHover: #ED6A5E,
+        colorPrimaryActive: #de5246,
+        colorTertiary: #1f9f8c,
+        colorTertiaryHover: #148f7d,
+        colorTertiaryActive: #096558,
         colorDominant: #F8F8F8,
         colorSecondary: #EFEFEF,
         colorText: #282828,
@@ -17,6 +21,7 @@ $light: (
 $dark: (
         colorPrimary: #ff7167,
         colorPrimaryHover: #ED6A5E,
+        colorPrimaryActive: #de5246,
         colorDominant: #282828,
         colorSecondary: #1E1E1E,
         colorText: #F8F8F8,
@@ -25,8 +30,12 @@ $dark: (
 );
 
 :root {
-  --color-primary: #{map-get($light, primaryColor)};
-  --color-primary-hover: #{map-get($light, primaryColorHover)};
+  --color-primary: #{map-get($light, colorPrimary)};
+  --color-primary-hover: #{map-get($light, colorPrimaryHover)};
+  --color-primary-active: #{map-get($light, colorPrimaryActive)};
+    --color-tertiary: #{map-get($light, colorTertiary)};
+    --color-tertiary-hover: #{map-get($light, colorTertiaryHover)};
+    --color-tertiary-active: #{map-get($light, colorTertiaryActive)};
   --color-dominant: #{map-get($light, colorDominant)};
   --color-secondary: #{map-get($light, colorSecondary)};
   --color-text: #{map-get($light, colorText)};
@@ -41,4 +50,4 @@ $secondary-font: 'Caveat', cursive;
 
 
 // SHADOW
-$shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+$shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;

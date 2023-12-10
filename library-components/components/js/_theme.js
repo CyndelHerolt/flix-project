@@ -3,6 +3,7 @@ const htmlEl = document.documentElement;
 let light = {
     'color-primary': '#ff7167',
     'color-primary-hover': '#ED6A5E',
+    'color-primary-active': '#de5246',
     'color-dominant': '#F8F8F8',
     'color-secondary': '#EFEFEF',
     'color-text': '#282828',
@@ -13,6 +14,7 @@ let light = {
 let dark = {
     'color-primary': '#ff7167',
     'color-primary-hover': '#ED6A5E',
+    'color-primary-active': '#de5246',
     'color-dominant': '#282828',
     'color-secondary': '#1E1E1E',
     'color-text': '#F8F8F8',
