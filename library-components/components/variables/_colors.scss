@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+// COLOR
+
+// LIGHT/DARK THEMES
+$light: (
+        colorPrimary: #ff7167,
+        colorPrimaryHover: #ED6A5E,
+        colorDominant: #F8F8F8,
+        colorSecondary: #EFEFEF,
+        colorText: #282828,
+        colorTextHover: #424242,
+        colorSubtext: #6E6E6E,
+);
+
+$dark: (
+        colorPrimary: #ff7167,
+        colorPrimaryHover: #ED6A5E,
+        colorDominant: #282828,
+        colorSecondary: #1E1E1E,
+        colorText: #F8F8F8,
+        colorTextHover: #E8E8E8,
+        colorSubtext: #d9d9d9,
+);
+
+:root {
+  --color-primary: #{map-get($light, primaryColor)};
+  --color-primary-hover: #{map-get($light, primaryColorHover)};
+  --color-dominant: #{map-get($light, colorDominant)};
+  --color-secondary: #{map-get($light, colorSecondary)};
+  --color-text: #{map-get($light, colorText)};
+  --color-text-hover: #{map-get($light, colorTextHover)};
+  --color-subtext: #{map-get($light, colorSubtext)};
+}
+
+// FONT
+$logo-font: 'Foldit', sans-serif;
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Caveat', cursive;
+
+
+// SHADOW
+$shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
