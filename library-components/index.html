@@ -7,12 +7,15 @@
     <script type="module" src="components/js/main.js"></script>
 </head>
 <body>
-<h1>demo GRID</h1>
-<button class="btn btn-primary" id="theme-button">Light mode</button>
-<!-- include components/layout/demo.html -->
-<div class="flix-grid g-4">
+<div class="flix-grid g-2">
+    <div class="flix-row bg-primary">
+        <div class="flix-col-12 p-3 flex-row flex-justify-space-between">
+            <h1>demo GRID</h1>
+            <button class="btn btn-soft bg-dominant" id="theme-button">Light mode</button>
+        </div>
+    </div>
     <div class="flix-row g-3 max-height">
-        <div class="flix-col-6 p-4">
+        <div class="flix-col-6 p-4 bg-dominant">
             <h2>Buttons</h2>
             <div class="p-2">
                 <h3>Base</h3>
@@ -52,12 +55,12 @@
                 <button class="btn btn-outline-secondary active">Secondary Outline</button>
             </div>
         </div>
-        <div class="flix-col-6 p-2">50%</div>
-        <div class="flix-col-12 p-2">100%</div>
+        <div class="flix-col-6 p-2 bg-dominant">50%</div>
+        <div class="flix-col-12 p-2 bg-dominant">100%</div>
     </div>
     <div class="flix-row g-1">
-        <div class="flix-col-3 p-4">30%</div>
-        <div class="flix-col-9 p-4">70%</div>
+        <div class="flix-col-3 p-4 bg-dominant">30%</div>
+        <div class="flix-col-9 p-4 bg-dominant">70%</div>
     </div>
 </div>
 </body>
