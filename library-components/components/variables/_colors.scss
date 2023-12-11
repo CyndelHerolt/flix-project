@@ -8,6 +8,7 @@ $light: (
         colorPrimary: #ff7167,
         colorPrimaryHover: #ED6A5E,
         colorPrimaryActive: #de5246,
+        colorPrimaryOpacity: rgba(255, 113, 103, 0.2),
         colorTertiary: #1f9f8c,
         colorTertiaryHover: #148f7d,
         colorTertiaryActive: #096558,
@@ -16,31 +17,57 @@ $light: (
         colorText: #282828,
         colorTextHover: #424242,
         colorSubtext: #6E6E6E,
+        colorSuccess: rgba(36, 253, 161, 0.2),
+        colorSuccessTxt: #0a5033,
+        colorWarning: rgba(255, 174, 0, 0.2),
+        colorWarningTxt: #b37e00,
+        colorDanger: rgba(255, 16, 0, 0.2),
+        colorDangerTxt: #ad180a,
+        colorInfo: rgba(0, 184, 212, 0.2),
+        colorInfoTxt: #007489,
 );
 
 $dark: (
         colorPrimary: #ff7167,
         colorPrimaryHover: #ED6A5E,
         colorPrimaryActive: #de5246,
+        colorPrimaryOpacity: rgba(255, 113, 103, 0.2),
         colorDominant: #282828,
         colorSecondary: #1E1E1E,
         colorText: #F8F8F8,
         colorTextHover: #E8E8E8,
         colorSubtext: #d9d9d9,
+        colorSuccess: rgba(36, 253, 161, 0.2),
+        colorSuccessTxt: #57ecad,
+        colorWarning: rgba(255, 174, 0, 0.2),
+        colorWarningTxt: #F6C246,
+        colorDanger: rgba(255, 16, 0, 0.2),
+        colorDangerTxt: #ff5a4b,
+        colorInfo: rgba(0, 184, 212, 0.2),
+        colorInfoTxt: #4ad1ec,
 );
 
 :root {
   --color-primary: #{map-get($light, colorPrimary)};
   --color-primary-hover: #{map-get($light, colorPrimaryHover)};
   --color-primary-active: #{map-get($light, colorPrimaryActive)};
-    --color-tertiary: #{map-get($light, colorTertiary)};
-    --color-tertiary-hover: #{map-get($light, colorTertiaryHover)};
-    --color-tertiary-active: #{map-get($light, colorTertiaryActive)};
+  --color-primary-opacity: #{map-get($light, colorPrimaryOpacity)};
+  --color-tertiary: #{map-get($light, colorTertiary)};
+  --color-tertiary-hover: #{map-get($light, colorTertiaryHover)};
+  --color-tertiary-active: #{map-get($light, colorTertiaryActive)};
   --color-dominant: #{map-get($light, colorDominant)};
   --color-secondary: #{map-get($light, colorSecondary)};
   --color-text: #{map-get($light, colorText)};
   --color-text-hover: #{map-get($light, colorTextHover)};
   --color-subtext: #{map-get($light, colorSubtext)};
+  --color-success: #{map-get($light, colorSuccess)};
+  --color-success-txt: #{map-get($light, colorSuccessTxt)};
+  --color-warning: #{map-get($light, colorWarning)};
+  --color-warning-txt: #{map-get($light, colorWarningTxt)};
+  --color-danger: #{map-get($light, colorDanger)};
+  --color-danger-txt: #{map-get($light, colorDangerTxt)};
+  --color-info: #{map-get($light, colorInfo)};
+  --color-info-txt: #{map-get($light, colorInfoTxt)};
 }
 
 // FONT

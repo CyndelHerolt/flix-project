@@ -5,6 +5,7 @@
   --color-primary: #ff7167;
   --color-primary-hover: #ED6A5E;
   --color-primary-active: #de5246;
+  --color-primary-opacity: rgba(255, 113, 103, 0.2);
   --color-tertiary: #1f9f8c;
   --color-tertiary-hover: #148f7d;
   --color-tertiary-active: #096558;
@@ -12,13 +13,56 @@
   --color-secondary: #EFEFEF;
   --color-text: #282828;
   --color-text-hover: #424242;
-  --color-subtext: #6E6E6E; }
+  --color-subtext: #6E6E6E;
+  --color-success: rgba(36, 253, 161, 0.2);
+  --color-success-txt: #0a5033;
+  --color-warning: rgba(255, 174, 0, 0.2);
+  --color-warning-txt: #b37e00;
+  --color-danger: rgba(255, 16, 0, 0.2);
+  --color-danger-txt: #ad180a;
+  --color-info: rgba(0, 184, 212, 0.2);
+  --color-info-txt: #007489; }
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary-opacity);
+  border-radius: 5px;
+  color: var(--color-primary); }
+
+.alert-title {
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.alert-content {
+  font-size: .8rem; }
+
+.alert-success {
+  background-color: var(--color-success);
+  color: var(--color-success-txt);
+  border: 2px solid var(--color-success-txt); }
+
+.alert-warning {
+  background-color: var(--color-warning);
+  color: var(--color-warning-txt);
+  border: 2px solid var(--color-warning-txt); }
+
+.alert-danger {
+  background-color: var(--color-danger);
+  color: var(--color-danger-txt);
+  border: 2px solid var(--color-danger-txt); }
+
+.alert-info {
+  background-color: var(--color-info);
+  color: var(--color-info-txt);
+  border: 2px solid var(--color-info-txt); }
 
 .btn {
   text-decoration: none;
   display: inline-block;
   padding: 6px 12px;
-  margin: 10px;
+  margin: 5px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
