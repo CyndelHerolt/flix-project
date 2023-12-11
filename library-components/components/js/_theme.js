@@ -4,11 +4,20 @@ let light = {
     'color-primary': '#ff7167',
     'color-primary-hover': '#ED6A5E',
     'color-primary-active': '#de5246',
+    'color-primary-opacity': 'rgba(255, 113, 103, 0.2)',
     'color-dominant': '#F8F8F8',
     'color-secondary': '#EFEFEF',
     'color-text': '#282828',
     'color-text-hover': '#424242',
     'color-subtext': '#6E6E6E',
+    'color-success': 'rgba(36,253,161,0.2)',
+    'color-success-txt': '#0a5033',
+    'color-warning': 'rgba(255,174,0,0.2)',
+    'color-warning-txt': '#b37e00',
+    'color-danger': 'rgba(255,16,0,0.2)',
+    'color-danger-txt': '#ad180a',
+    'color-info': 'rgba(0,184,212,0.2)',
+    'color-info-txt': '#007489',
 };
 
 let dark = {
@@ -20,6 +29,14 @@ let dark = {
     'color-text': '#F8F8F8',
     'color-text-hover': '#e8e8e8',
     'color-subtext': '#d9d9d9',
+    'color-success': 'rgba(36,253,161,0.2)',
+    'color-success-txt': '#57ECAD',
+    'color-warning': 'rgba(255,174,0,0.2)',
+    'color-warning-txt': '#f6c246',
+    'color-danger': 'rgba(255,16,0,0.2)',
+    'color-danger-txt': '#ff5a4b',
+    'color-info': 'rgba(0,184,212,0.2)',
+    'color-info-txt': '#4ad1ec',
 };
 
 // une fois que la page est chargée
