@@ -24,10 +24,6 @@
   --color-info-txt: #007489; }
 
 .alert {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
   padding: 15px;
   margin-bottom: 20px;
   border: 2px solid var(--color-primary);
@@ -63,7 +59,10 @@
   border: 2px solid var(--color-info-txt); }
 
 .alert-dismissible {
-  padding-right: 35px; }
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; }
 
 .btn {
   text-decoration: none;
