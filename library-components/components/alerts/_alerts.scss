@@ -1,6 +1,8 @@
-
-
 .alert {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 15px;
     margin-bottom: 20px;
     border: 2px solid var(--color-primary);
@@ -40,4 +42,8 @@
     background-color: var(--color-info);
     color: var(--color-info-txt);
     border: 2px solid var(--color-info-txt);
+}
+
+.alert-dismissible {
+    padding-right: 35px;
 }
