@@ -1,6 +1,6 @@
 @import "variables/_colors";
 @import "alerts/_alerts";
-//@import "badges";
+@import "badges/_badges";
 //@import "breadcrumbs";
 @import "buttons/_buttons";
 //@import "cards";
@@ -24,4 +24,9 @@ body {
   background-color: var(--color-secondary);
   font-family: $primary-font;
   color: var(--color-text);
+}
+
+// BACKGROUND
+.bg-tertiary {
+  background-color: var(--color-tertiary);
 }

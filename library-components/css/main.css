@@ -64,6 +64,36 @@
   align-items: flex-start;
   justify-content: space-between; }
 
+.badge {
+  display: inline-block;
+  padding: 1em 1.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: #F8F8F8; }
+  .badge.rounded {
+    border-radius: 50px; }
+
+.badge-s {
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  border-radius: 5px; }
+
+.badge-m {
+  padding: 0.5em 0.7em;
+  font-size: 90%;
+  border-radius: 5px; }
+
+.badge-l {
+  padding: 0.75em 1em;
+  font-size: 100%;
+  border-radius: 5px; }
+
 .btn {
   text-decoration: none;
   display: inline-block;
@@ -548,3 +578,6 @@ body {
   background-color: var(--color-secondary);
   font-family: "Montserrat", sans-serif;
   color: var(--color-text); }
+
+.bg-tertiary {
+  background-color: var(--color-tertiary); }
