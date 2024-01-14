@@ -21,7 +21,8 @@
   --color-danger: rgba(255, 16, 0, 0.2);
   --color-danger-txt: #ad180a;
   --color-info: rgba(0, 184, 212, 0.2);
-  --color-info-txt: #007489; }
+  --color-info-txt: #007489;
+}
 
 .alert {
   padding: 15px;

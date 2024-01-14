@@ -2,10 +2,27 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Delete;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\Patch;
+use ApiPlatform\Metadata\Post;
+use ApiPlatform\Metadata\Put;
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
+#[ApiResource(
+    operations: [
+        new Get(uriTemplate: '/user/{id}'),
+        new GetCollection(),
+        new Post(),
+        new Put(),
+        new Patch(),
+        new Delete(),
+    ]
+)]
 class User
 {
     #[ORM\Id]
@@ -46,6 +63,8 @@ class User
 
     public function setPassword(string $password): static
     {
+        // hash the password
+        $password = password_hash($password, PASSWORD_DEFAULT);
         $this->password = $password;
 
         return $this;
@@ -61,5 +80,10 @@ class User
         $this->mail = $mail;
 
         return $this;
+    }
+
+    public function getUserIdentifier(): string
+    {
+        return $this->username;
     }
 }

@@ -3,7 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/users-service/src" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/users-service/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/users-service/tests" isTestSource="true" packagePrefix="App\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/doctrine/collections" />
@@ -128,6 +131,9 @@
       <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/twig/extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/api-platform/core" />
+      <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/nelmio/cors-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/users-service/vendor/willdurand/negotiation" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
