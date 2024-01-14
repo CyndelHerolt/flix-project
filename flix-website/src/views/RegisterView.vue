@@ -29,33 +29,29 @@
   }
 </script>
 <template>
-  <div class="sign-in">
 <!--  formulaire de création de compte  -->
-    <form class="form" @submit.prevent="submit">
-      <h2>Sign Up</h2>
-      <div class="form-control">
+  <div class="flix-grid-s grid-justify-center">
+    <form class="form flix-row g-0" @submit.prevent="submit">
+      <h2 class="flix-col-12">Sign Up</h2>
+      <div class="form-row flix-col-6">
         <label for="email">Email</label>
         <input type="email" id="email" v-model="email" />
       </div>
-      <div class="form-control">
+      <div class="form-row flix-col-6">
         <label for="username">Username</label>
         <input type="text" id="username" v-model="username" />
       </div>
-      <div class="form-control">
+      <div class="form-row flix-col-6">
         <label for="password">Password</label>
         <input type="password" id="password" v-model="password" />
       </div>
-      <div class="form-control">
+      <div class="form-row flix-col-6">
         <label for="password2">Confirm Password</label>
         <input type="password" id="password2" v-model="password2" />
       </div>
       <button class="btn btn-primary">Sign Up</button>
+      <p class="flix-col-12">Already have an account? <router-link to="/login">Login</router-link></p>
     </form>
-    <p>Already have an account? <router-link to="/login">Login</router-link></p>
-    <hr>
-    <button class="btn btn-soft bg-dominant" @click="githubSignIn">Sign Up with Github</button>
-    <br>
-    <button class="btn btn-soft bg-dominant" @click="googleSignIn">Sign Up with Google</button>
   </div>
 </template>
 
