@@ -9,7 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^10.7.2",
+    "@vueuse/firebase": "^10.7.2",
+    "@vueuse/integrations": "^10.7.2",
+    "@websanova/vue-auth": "^4.2.1",
+    "axios": "^1.6.5",
     "vue": "^3.3.10",
+    "vue-authenticate": "^1.5.0",
+    "vue-axios": "^3.5.2",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
